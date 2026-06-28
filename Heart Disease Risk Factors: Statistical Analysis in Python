@@ -5,7 +5,7 @@
    "id": "fa8e1cbb-3014-4b3a-9cc2-b432ac463cb9",
    "metadata": {},
    "source": [
-    "# Objective: Investigate data from a sample patients who were evaluated for heart disease at the Cleveland Clinic Foundation."
+    "# Objective: Use patient data from the Cleveland Clinic Foundation to determine what factors are significantly associated with heart disease diagnosis."
    ]
   },
   {
@@ -78,7 +78,7 @@
    "id": "280d70bf-3747-4867-b1da-c72bf932afb8",
    "metadata": {},
    "source": [
-    "### Is thalach (maximum heart rate achieved during exercise) associated with whether a patient will ultimately be diagnosed with heart disease? "
+    "### Research Question 1: Is thalach associated with heart disease diagnosis? "
    ]
   },
   {
@@ -300,7 +300,7 @@
    "id": "7332e5f8-e563-4136-89da-726c18b4df24",
    "metadata": {},
    "source": [
-    "### Is thalach associated with the kind of chest pains a person experiences?"
+    "### Research Question 3: Is thalach associated with the kind of chest pains a person experiences?"
    ]
   },
   {
@@ -377,15 +377,15 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "There is at least one pair of chest pain categories for which people experiencing those types have significantly difference thalach levels.\n"
+      "There is at least one pair of chest pain categories for which people experiencing those types have significantly different thalach levels.\n"
      ]
     }
    ],
    "source": [
     "if pval_cp<0.05:\n",
-    "    print('There is at least one pair of chest pain categories for which people experiencing those types have significantly difference thalach levels.')\n",
+    "    print('There is at least one pair of chest pain categories for which people experiencing those types have significantly different thalach levels.')\n",
     "else:\n",
-    "    print('There is no chest pain categories for which people experiencing those types have significantly difference thalach levels.')"
+    "    print('There are no chest pain categories for which people experiencing those types have significantly different thalach levels.')"
    ]
   },
   {
@@ -393,7 +393,7 @@
    "id": "e9fb5de2-f884-4f06-832f-016f075e0e8b",
    "metadata": {},
    "source": [
-    "### Conduct Tukey's test."
+    "### Conduct Tukey's test on the various types of chest pain."
    ]
   },
   {
